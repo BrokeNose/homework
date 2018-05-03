@@ -4,12 +4,70 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-	<title>second.html</title>
+	<title>onepage.html</title>
 	<link rel="stylesheet" href="css/bootstrap.css"/>
+	<link rel="stylesheet" href="css/reset.css"/>
+	<!-- webfont -->
+	<link href='http://fonts.googleapis.com/earlyaccess/nanumgothic.css' rel='stylesheet' type='text/css'/>
+	<link href='http://fonts.googleapis.com/earlyaccess/nanumbrushscript.css' rel='stylesheet' type='text/css'/>
+	<link href='http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css' rel='stylesheet' type='text/css'/>
+	<link href='http://fonts.googleapis.com/earlyaccess/nanumpenscript.css' rel='stylesheet' type='text/css'/>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<style>
+		
+	</style>
+</head>
 </head>
 <body>
-
+	<div class="wrapper">
+		<div id="fullpage" class="main">
+			<div class="section fp-auto-height fp-auto-height-responsive">
+				<div class="slide "  data-anchor="slide3">
+					<img class="img-responsive" src="images/banner/page1.png" alt="">
+				</div>
+			</div>
+			<div class="section fp-auto-height fp-auto-height-responsive">
+				<div class="slide" data-anchor="slide3">
+					<img class="img-responsive" src="images/banner/page2.png" alt="">
+				</div>				
+			</div>
+			<div class="section fp-auto-height fp-auto-height-responsive">
+				<div class="slide" data-anchor="slide3">
+					<img class="img-responsive" src="images/banner/page3.png" alt="">
+				</div>				
+			</div>
+			<div class="section fp-auto-height fp-auto-height-responsive">
+				<div class="slide" data-anchor="slide3">
+					<img class="img-responsive" src="images/banner/page4.png" alt="">
+				</div>				
+			</div>
+			<div class="section fp-auto-height fp-auto-height-responsive">
+				<div class="slide" data-anchor="slide3">
+					<img class="img-responsive" src="images/banner/page5.png" alt="">
+				</div>				
+			</div>
+		</div>
+	</div>
 <script src="js/jquery-3.3.1.js"></script>
 <script src="js/bootstrap.js"></script>	
+<script src="js/jquery.smooth-scroll.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- 아래는 선택사항입니다. css3:false 옵션을 쓰시면서 "linear", "swing" 또는 "easeInOutCubic" 대신 다른 전환(easing) 효과를 원하시는 경우에만 필요합니다. -->
+<script src="vendors/jquery.easings.min.js"></script>
+
+
+<!-- 아래 선은 `scrollOverflow:true` 옵션을 쓰시는 경우에만 넣으셔야 합니다. -->
+<script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+<script>
+	$(document).ready(function() {
+		$('#fullpage').fullpage({
+			anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage']
+		});
+	});
+</script>
 </body>
 </html>

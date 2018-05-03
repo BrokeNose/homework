@@ -7,7 +7,15 @@
 	<title>index.html</title>
 	<link rel="stylesheet" href="css/bootstrap.css"/>
 	<link rel="stylesheet" href="css/reset.css"/>
-	
+
+	<!-- font -->
+	<link href='http://fonts.googleapis.com/earlyaccess/nanumgothic.css' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/earlyaccess/nanumbrushscript.css' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/earlyaccess/nanumpenscript.css' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
 	<style>
 		/*nav bar*/
 		.navbar-inverse > img{
@@ -33,6 +41,20 @@
 			height: 200px;
 			background-color: #ddd;
 		}
+
+		/*banner*/
+		.carousel-caption{
+			bottom: 20%;
+		}
+		.carousel-caption >h3{
+			font-size: 30px;
+			padding-bottom: 40px;
+		}
+		.carousel-caption>p{
+			font-size: 20px;
+			font-family: 
+		}
+		
 
 		/*header*/
 		
@@ -321,5 +343,12 @@
 
 <script src="js/jquery-3.3.1.js"></script>
 <script src="js/bootstrap.js"></script>	
+<script src="js/jquery.smooth-scroll.js"></script>
+<script>
+	$("#myNav a").smoothScroll({
+		offset:-60
+	});
+</script>
+
 </body>
 </html>
