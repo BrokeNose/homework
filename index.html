@@ -6,9 +6,39 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<title>index.html</title>
 	<link rel="stylesheet" href="css/bootstrap.css"/>
+	
+	<style>
+		.navbar-inverse > img{
+			padding-right: 0;
+		}
+		.navbar-inverse > a{
+			padding-left: 0;
+		}
+		
+	</style>
 </head>
 <body>
-	
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<img class="navbar-brand" src="images/index/TbaT_Icon.png" alt="">
+		<a href="index.html" class="navbar-brand">TbaT</a>
+		<!-- data target= "선택자" -->
+		<button class="navbar-toggle" data-toggle="collapse" data-target="#one">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="one">
+			<ul class="nav navbar-nav">
+				<li><a href="#">one</a></li>
+				<li><a href="#">two</a></li>
+				<li><a href="#">three</a></li>
+				<li><a href="#">one</a></li>
+				<li><a href="#">two</a></li>
+				<li><a href="#">three</a></li>
+				<li><a href="#">one</a></li>
+			</ul>
+		</div>
+	</div>
 <script src="js/jquery-3.3.1.js"></script>
 <script src="js/bootstrap.js"></script>	
 </body>
